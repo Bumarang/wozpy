@@ -14,7 +14,7 @@ class WozObject(BaseModel):
     huisnummertoevoeging: Any | None = None
     locatieomschrijving: str | None = None
     gemeentecode: int
-    grondoppervlakte: int
+    grondoppervlakte: int | None = None
     adresseerbaarobjectid: int
     nummeraanduidingid: int
     verbonden_adresseerbare_objecten: list[int] = Field(
